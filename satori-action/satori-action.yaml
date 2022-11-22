@@ -1,0 +1,13 @@
+name: 'Chatbot quality assurance'
+description: 'Apply several techniques to check the quality of your chatbot'
+inputs:
+  files: 
+    description: 'Files to be checked'
+    required: true
+    default: 'A test'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - xxyy
+    - ${{ inputs.files }}

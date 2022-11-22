@@ -1,0 +1,15 @@
+name: test-satori-action
+run-name: ${{ github.actor }} is checking chatbots with SATORI
+on: [push]
+jobs:
+  check-chatbot:
+    runs-on: ubuntu-latest
+    steps:
+      # This step checks out a copy of your repository.
+      - uses: actions/checkout@v3
+      # This step references the directory that contains the action.
+      - uses: ./satori-action/.
+        with:
+          files: "chatbot.zip"
+      #- run: |
+      #    echo `find`
