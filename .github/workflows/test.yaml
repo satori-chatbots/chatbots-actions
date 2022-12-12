@@ -10,6 +10,7 @@ jobs:
       # This step references the directory that contains the action.
       - uses: ./satori-action/.
         with:
-          files: "chatbot.zip"
+          format: "conga"
+          files: "test-files/01_smalltalk_bot.xmi"
       #- run: |
       #    echo `find`
