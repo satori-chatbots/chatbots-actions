@@ -2,7 +2,7 @@ name: test-satori-action
 run-name: ${{ github.actor }} is checking chatbots with SATORI
 on: [push]
 jobs:
-  check-chatbot:
+  check-conga:
     runs-on: ubuntu-latest
     steps:
       # This step checks out a copy of your repository.
@@ -14,3 +14,11 @@ jobs:
           files: "test-files/01_smalltalk_bot.xmi"
       #- run: |
       #    echo `find`
+  check-dialogflow:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: ./satori-action/.
+        with:
+          format: "dialogflow"
+          files: "test-files/hotel-booking.zip"
