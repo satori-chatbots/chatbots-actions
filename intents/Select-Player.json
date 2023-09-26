@@ -1,0 +1,49 @@
+{
+  "id": "fb77e65c-19c4-48f0-b410-8962f28b5cda",
+  "name": "Select-Player",
+  "auto": true,
+  "contexts": [
+    "select-player"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "495358ef-5344-4927-a56e-415c42a943fb",
+          "name": "characterName",
+          "required": false,
+          "dataType": "@characterName",
+          "value": "$characterName",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

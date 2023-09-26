@@ -1,0 +1,54 @@
+[
+  {
+    "id": "0dd1d574-cf8f-4f01-8238-8cc79d2c2781",
+    "data": [
+      {
+        "text": "Open map",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "ec635844-9448-4c8e-8916-7aa83e7ae17d",
+    "data": [
+      {
+        "text": "See map",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "4f139179-ffae-454a-921e-bac686604475",
+    "data": [
+      {
+        "text": "Check map",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "1f7551cc-5b59-4ac7-ad8f-c291c1e59526",
+    "data": [
+      {
+        "text": "I want to see the map",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  }
+]

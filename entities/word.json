@@ -1,0 +1,9 @@
+{
+  "id": "d165c2d5-e75a-41bb-b05e-615f489d1767",
+  "name": "word",
+  "isOverridable": true,
+  "isEnum": false,
+  "isRegexp": true,
+  "automatedExpansion": false,
+  "allowFuzzyExtraction": false
+}

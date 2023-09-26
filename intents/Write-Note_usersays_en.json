@@ -1,0 +1,41 @@
+[
+  {
+    "id": "07e2353a-dddc-48dc-9d91-d1d9cca32e66",
+    "data": [
+      {
+        "text": "Dont drink the potion",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "82f6fc6e-f3c0-47d1-87fe-ba842878e9c3",
+    "data": [
+      {
+        "text": "Find a potion",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "b098f53e-aa00-48a4-a409-968dfad8fb20",
+    "data": [
+      {
+        "text": "I have to find a key in order to open a chest",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  }
+]

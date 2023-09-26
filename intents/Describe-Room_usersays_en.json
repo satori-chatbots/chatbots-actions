@@ -1,0 +1,32 @@
+[
+  {
+    "id": "120d4185-3ab9-4744-9e69-4d4860f0911e",
+    "data": [
+      {
+        "text": "Describe this room",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "bc41e349-566c-4207-9138-5574f99575f8",
+    "data": [
+      {
+        "text": "Where am I",
+        "userDefined": false
+      },
+      {
+        "text": "?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  }
+]

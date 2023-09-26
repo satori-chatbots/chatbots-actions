@@ -1,0 +1,49 @@
+{
+  "id": "4b80660d-1ba4-4c9f-b936-64be2f1589a8",
+  "name": "Greet-Character-Game",
+  "auto": true,
+  "contexts": [
+    "player-action"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "69f69c09-5a85-4c4a-a959-41781ebba912",
+          "name": "characterName",
+          "required": false,
+          "dataType": "@characterName",
+          "value": "$characterName",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

@@ -1,0 +1,64 @@
+{
+  "id": "bc5396cc-b356-4b02-85f2-50e72458c64c",
+  "name": "Interact-Game-Object",
+  "auto": true,
+  "contexts": [
+    "player-action"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "311993f1-391b-4f05-ae76-6170ae7959c6",
+          "name": "item",
+          "required": false,
+          "dataType": "@word",
+          "value": "$item",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "26004caa-0747-49b3-b351-f001e6c71082",
+          "name": "action",
+          "required": false,
+          "dataType": "@word",
+          "value": "$action",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "endInteraction": true
+}

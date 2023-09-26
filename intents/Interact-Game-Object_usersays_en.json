@@ -1,0 +1,176 @@
+[
+  {
+    "id": "b7488391-0b24-49be-8ae3-3c1ca1e4d4b6",
+    "data": [
+      {
+        "text": "Take",
+        "meta": "@word",
+        "alias": "action",
+        "userDefined": false
+      },
+      {
+        "text": " the ",
+        "userDefined": false
+      },
+      {
+        "text": "potion",
+        "meta": "@word",
+        "alias": "item",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "f6bdfde8-a79e-4cba-8afc-bac465431afb",
+    "data": [
+      {
+        "text": "Open",
+        "meta": "@word",
+        "alias": "action",
+        "userDefined": false
+      },
+      {
+        "text": " the ",
+        "userDefined": false
+      },
+      {
+        "text": "chest",
+        "meta": "@word",
+        "alias": "item",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "12a4bead-bb9c-4d49-b302-c9c7bf5de069",
+    "data": [
+      {
+        "text": "I ",
+        "userDefined": false
+      },
+      {
+        "text": "open",
+        "meta": "@word",
+        "alias": "action",
+        "userDefined": true
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "the",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "chest",
+        "meta": "@word",
+        "alias": "item",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "4d782deb-1577-4117-9c09-7e2b1c2f6f3e",
+    "data": [
+      {
+        "text": "I want to ",
+        "userDefined": false
+      },
+      {
+        "text": "open",
+        "meta": "@word",
+        "alias": "action",
+        "userDefined": false
+      },
+      {
+        "text": " the ",
+        "userDefined": false
+      },
+      {
+        "text": "chest",
+        "meta": "@word",
+        "alias": "item",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "122a887e-4054-4fcb-bdc2-2886202b31f0",
+    "data": [
+      {
+        "text": "I want to ",
+        "userDefined": false
+      },
+      {
+        "text": "take",
+        "meta": "@word",
+        "alias": "action",
+        "userDefined": true
+      },
+      {
+        "text": " the ",
+        "userDefined": false
+      },
+      {
+        "text": "potion",
+        "meta": "@word",
+        "alias": "item",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "7bd5c945-aaae-43ac-a6ea-5a91b280c82f",
+    "data": [
+      {
+        "text": "I ",
+        "userDefined": false
+      },
+      {
+        "text": "take",
+        "meta": "@word",
+        "alias": "action",
+        "userDefined": true
+      },
+      {
+        "text": " the ",
+        "userDefined": false
+      },
+      {
+        "text": "potion",
+        "meta": "@word",
+        "alias": "item",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  }
+]

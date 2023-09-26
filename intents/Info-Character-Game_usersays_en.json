@@ -1,0 +1,178 @@
+[
+  {
+    "id": "801142cb-9f28-472b-a498-84707493f292",
+    "data": [
+      {
+        "text": "Do you know anything about any ",
+        "userDefined": false
+      },
+      {
+        "text": "item",
+        "meta": "@word",
+        "alias": "item",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "Magnus the red",
+        "meta": "@characterName",
+        "alias": "characterName",
+        "userDefined": false
+      },
+      {
+        "text": "?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "5d2bc327-f32f-4b89-ae80-af21a22c3047",
+    "data": [
+      {
+        "text": "Can you tell me anything else, ",
+        "userDefined": false
+      },
+      {
+        "text": "Magnus the red",
+        "meta": "@characterName",
+        "alias": "characterName",
+        "userDefined": false
+      },
+      {
+        "text": "?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "428c65b2-ec81-44e2-9a1b-e3ee85ee4181",
+    "data": [
+      {
+        "text": "Do you know anything about any ",
+        "userDefined": false
+      },
+      {
+        "text": "item,",
+        "meta": "@word",
+        "alias": "item",
+        "userDefined": true
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "Magnus the red",
+        "meta": "@characterName",
+        "alias": "characterName",
+        "userDefined": true
+      },
+      {
+        "text": "?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "6644f61b-16c0-4e1f-a744-f44385e657c2",
+    "data": [
+      {
+        "text": "Do you know anything about ",
+        "userDefined": false
+      },
+      {
+        "text": "items,",
+        "meta": "@word",
+        "alias": "item",
+        "userDefined": true
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "Magnus the red",
+        "meta": "@characterName",
+        "alias": "characterName",
+        "userDefined": true
+      },
+      {
+        "text": "?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "a3d864ee-2c50-4be8-bfe1-aae4c3b1c826",
+    "data": [
+      {
+        "text": "Is there anything you can tell me,",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "Magnus the red",
+        "meta": "@characterName",
+        "alias": "characterName",
+        "userDefined": true
+      },
+      {
+        "text": "?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "6e5c5e7c-7480-4ccb-b19e-062e37bab8f7",
+    "data": [
+      {
+        "text": "What can you tell me",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "Magnus the red",
+        "meta": "@characterName",
+        "alias": "characterName",
+        "userDefined": true
+      },
+      {
+        "text": "?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  }
+]

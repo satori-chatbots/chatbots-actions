@@ -1,0 +1,32 @@
+[
+  {
+    "id": "26f65cce-2c05-4296-8ba2-cbbd076596f3",
+    "data": [
+      {
+        "text": "Mary",
+        "meta": "@characterName",
+        "alias": "characterName",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "3fe52610-154b-44e3-a7be-30e50db85542",
+    "data": [
+      {
+        "text": "Marcus",
+        "meta": "@characterName",
+        "alias": "characterName",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  }
+]

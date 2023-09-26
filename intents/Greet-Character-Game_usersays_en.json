@@ -1,0 +1,21 @@
+[
+  {
+    "id": "092da933-b527-4b2c-adce-f30facb2373d",
+    "data": [
+      {
+        "text": "Hello ",
+        "userDefined": false
+      },
+      {
+        "text": "Magnus the Red",
+        "meta": "@characterName",
+        "alias": "characterName",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  }
+]
