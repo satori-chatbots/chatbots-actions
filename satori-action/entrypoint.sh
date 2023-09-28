@@ -119,19 +119,8 @@ function getResult(){
 function getRanges(){
     max=$1
     min=$2
-    if [ $min -eq 0 ] || [ $max -eq 9999999 ]; then
-        if [ $min -gt 0 ]; then
-            echo "[ $min,  ∞ ["
-        else 
-            if [ $max -lt 9999999 ]; then
-                echo "[ 0 , $max ] "
-            else
-                echo "[ 0 , ∞ ["
-            fi
-        fi           
-    else
-        echo "[ $min, $max ]"
-    fi    
+    echo "[ $min, $max ]"
+       
 }
 
 function getDescription() {
@@ -183,14 +172,14 @@ function initializeEvalMetrics(){
             if key_exist ENT_MAX; then
                 gM_ENT_MAX=$(jq -r '.ENT_MAX' metrics.json)              
             else
-                gM_ENT_MAX=9999999
+                gM_ENT_MAX=9
             fi
         else
         echo "Metrics ENT_MAX or ENT_MIN do not exist in metrics.json"     
         fi
 	 else	 
 	 gM_ENT_MIN=0
-	 gM_ENT_MAX=10 
+	 gM_ENT_MAX=9 
 	 fi
      ;;
 
@@ -200,19 +189,19 @@ function initializeEvalMetrics(){
             if key_exist INT_MIN; then
                 gM_INT_MIN=$(jq -r '.INT_MIN' metrics.json)
             else
-                gM_INT_MIN=0
+                gM_INT_MIN=3
             fi
             if key_exist INT_MAX; then
                 gM_INT_MAX=$(jq -r '.INT_MAX' metrics.json)              
             else
-                gM_INT_MAX=9999999
+                gM_INT_MAX=29
             fi
         else
         echo "Metrics INT_MAX or INT_MIN do not exist in metrics.json"     
         fi
 	 else	 
-	 gM_INT_MIN=0
-	 gM_INT_MAX=10 
+	 gM_INT_MIN=3
+	 gM_INT_MAX=29 
 	 fi     
      ;;
 
@@ -222,19 +211,19 @@ function initializeEvalMetrics(){
             if key_exist NL_MIN; then
                 gM_NL_MIN=$(jq -r '.NL_MIN' metrics.json)
             else
-                gM_NL_MIN=0
+                gM_NL_MIN=1
             fi
             if key_exist NL_MAX; then
                 gM_NL_MAX=$(jq -r '.NL_MAX' metrics.json)              
             else
-                gM_NL_MAX=9999999
+                gM_NL_MAX=10
             fi
         else
         echo "Metrics NL_MAX or NL_MIN do not exist in metrics.json"     
         fi
 	 else	 
-	 gM_NL_MIN=0
-	 gM_NL_MAX=10 
+	 gM_NL_MIN=1
+	 gM_NL_MAX=10
 	 fi     
      ;;
 
@@ -244,19 +233,19 @@ function initializeEvalMetrics(){
             if key_exist FLOW_MIN; then
                 gM_FLOW_MIN=$(jq -r '.FLOW_MIN' metrics.json)
             else
-                gM_FLOW_MIN=0
+                gM_FLOW_MIN=2
             fi
             if key_exist FLOW_MAX; then
                 gM_FLOW_MAX=$(jq -r '.FLOW_MAX' metrics.json)              
             else
-                gM_FLOW_MAX=9999999
+                gM_FLOW_MAX=21
             fi
         else
         echo "Metrics FLOW_MAX or FLOW_MIN do not exist in metrics.json"     
         fi
 	 else	 
-	 gM_FLOW_MIN=0
-	 gM_FLOW_MAX=10 
+	 gM_FLOW_MIN=2
+	 gM_FLOW_MAX=21 
 	 fi     
      ;;
     
@@ -266,19 +255,19 @@ function initializeEvalMetrics(){
             if key_exist PATH_MIN; then
                 gM_PATH_MIN=$(jq -r '.PATH_MIN' metrics.json)
             else
-                gM_PATH_MIN=0
+                gM_PATH_MIN=2
             fi
             if key_exist PATH_MAX; then
                 gM_PATH_MAX=$(jq -r '.PATH_MAX' metrics.json)              
             else
-                gM_PATH_MAX=9999999
+                gM_PATH_MAX=27
             fi
         else
         echo "Metrics PATH_MAX or PATH_MIN do not exist in metrics.json"     
         fi
 	 else	 
-	 gM_PATH_MIN=0
-	 gM_PATH_MAX=10 
+	 gM_PATH_MIN=2
+	 gM_PATH_MAX=27 
 	 fi     
      ;;
 
@@ -288,19 +277,19 @@ function initializeEvalMetrics(){
             if key_exist LPE_MIN; then
                 gM_LPE_MIN=$(jq -r '.LPE_MIN' metrics.json)
             else
-                gM_LPE_MIN=0
+                gM_LPE_MIN=3
             fi
             if key_exist LPE_MAX; then
                 gM_LPE_MAX=$(jq -r '.LPE_MAX' metrics.json)              
             else
-                gM_LPE_MAX=9999999
+                gM_LPE_MAX=13
             fi
         else
         echo "Metrics LPE_MAX or LPE_MIN do not exist in metrics.json"     
         fi
 	 else	 
-	 gM_LPE_MIN=0
-	 gM_LPE_MAX=10 
+	 gM_LPE_MIN=3
+	 gM_LPE_MAX=13 
 	 fi     
      ;;
 
@@ -315,14 +304,14 @@ function initializeEvalMetrics(){
             if key_exist SPL_MAX; then
                 gM_SPL_MAX=$(jq -r '.SPL_MAX' metrics.json)              
             else
-                gM_SPL_MAX=9999999
+                gM_SPL_MAX=7
             fi
         else
         echo "Metrics SPL_MAX or SPL_MIN do not exist in metrics.json"     
         fi
 	 else	 
 	 gM_SPL_MIN=0
-	 gM_SPL_MAX=10 
+	 gM_SPL_MAX=7 
 	 fi     
      ;;
     
@@ -332,19 +321,19 @@ function initializeEvalMetrics(){
             if key_exist WL_MIN; then
                 gM_WL_MIN=$(jq -r '.WL_MIN' metrics.json)
             else
-                gM_WL_MIN=0
+                gM_WL_MIN=3
             fi
             if key_exist WL_MAX; then
                 gM_WL_MAX=$(jq -r '.WL_MAX' metrics.json)              
             else
-                gM_WL_MAX=9999999
+                gM_WL_MAX=18
             fi
         else
         echo "Metrics WL_MAX or WL_MIN do not exist in metrics.json"     
         fi
 	 else	 
-	 gM_WL_MIN=0
-	 gM_WL_MAX=10 
+	 gM_WL_MIN=3
+	 gM_WL_MAX=18 
 	 fi     
      ;;
     
@@ -354,19 +343,19 @@ function initializeEvalMetrics(){
             if key_exist CL_MIN; then
                 gM_CL_MIN=$(jq -r '.CL_MIN' metrics.json)
             else
-                gM_CL_MIN=0
+                gM_CL_MIN=1
             fi
             if key_exist CL_MAX; then
                 gM_CL_MAX=$(jq -r '.CL_MAX' metrics.json)              
             else
-                gM_CL_MAX=9999999
+                gM_CL_MAX=5
             fi
         else
         echo "Metrics CL_MAX or CL_MIN do not exist in metrics.json"     
         fi
 	 else	 
-	 gM_CL_MIN=0
-	 gM_CL_MAX=10 
+	 gM_CL_MIN=1
+	 gM_CL_MAX=5 
 	 fi     
      ;;
 
@@ -376,19 +365,19 @@ function initializeEvalMetrics(){
             if key_exist FPATH_MIN; then
                 gM_FPATH_MIN=$(jq -r '.FPATH_MIN' metrics.json)
             else
-                gM_FPATH_MIN=0
+                gM_FPATH_MIN=1
             fi
             if key_exist FPATH_MAX; then
                 gM_FPATH_MAX=$(jq -r '.FPATH_MAX' metrics.json)              
             else
-                gM_FPATH_MAX=9999999
+                gM_FPATH_MAX=6
             fi
         else
         echo "Metrics FPATH_MAX or FPATH_MIN do not exist in metrics.json"     
         fi
 	 else	 
-	 gM_FPATH_MIN=0
-	 gM_FPATH_MAX=10 
+	 gM_FPATH_MIN=1
+	 gM_FPATH_MAX=6 
 	 fi     
      ;;
     
@@ -398,19 +387,19 @@ function initializeEvalMetrics(){
             if key_exist FACT_MIN; then
                 gM_FACT_MIN=$(jq -r '.FACT_MIN' metrics.json)
             else
-                gM_FACT_MIN=0
+                gM_FACT_MIN=1
             fi
             if key_exist FACT_MAX; then
                 gM_FACT_MAX=$(jq -r '.FACT_MAX' metrics.json)              
             else
-                gM_FACT_MAX=9999999
+                gM_FACT_MAX=5
             fi
         else
         echo "Metrics FACT_MAX or FACT_MIN do not exist in metrics.json"     
         fi
 	 else	 
-	 gM_FACT_MIN=0
-	 gM_FACT_MAX=10 
+	 gM_FACT_MIN=1
+	 gM_FACT_MAX=5
 	 fi     
      ;;
 
@@ -420,19 +409,19 @@ function initializeEvalMetrics(){
             if key_exist TPI_MIN; then
                 gM_TPI_MIN=$(jq -r '.TPI_MIN' metrics.json)
             else
-                gM_TPI_MIN=0
+                gM_TPI_MIN=8
             fi
             if key_exist TPI_MAX; then
                 gM_TPI_MAX=$(jq -r '.TPI_MAX' metrics.json)              
             else
-                gM_TPI_MAX=9999999
+                gM_TPI_MAX=30
             fi
         else
         echo "Metrics TPI_MAX or TPI_MIN do not exist in metrics.json"     
         fi
 	 else	 
-	 gM_TPI_MIN=0
-	 gM_TPI_MAX=10 
+	 gM_TPI_MIN=8
+	 gM_TPI_MAX=30
 	 fi     
      ;;
     
@@ -442,19 +431,19 @@ function initializeEvalMetrics(){
             if key_exist WPTP_MIN; then
                 gM_WPTP_MIN=$(jq -r '.WPTP_MIN' metrics.json)
             else
-                gM_WPTP_MIN=0
+                gM_WPTP_MIN=1
             fi
             if key_exist WPTP_MAX; then
                 gM_WPTP_MAX=$(jq -r '.WPTP_MAX' metrics.json)              
             else
-                gM_WPTP_MAX=9999999
+                gM_WPTP_MAX=7
             fi
         else
         echo "Metrics WPTP_MAX or WPTP_MIN do not exist in metrics.json"     
         fi
 	 else	 
-	 gM_WPTP_MIN=0
-	 gM_WPTP_MAX=10 
+	 gM_WPTP_MIN=1
+	 gM_WPTP_MAX=7 
 	 fi     
      ;;
 
@@ -469,14 +458,14 @@ function initializeEvalMetrics(){
             if key_exist PPTP_MAX; then
                 gM_PPTP_MAX=$(jq -r '.PPTP_MAX' metrics.json)              
             else
-                gM_PPTP_MAX=9999999
+                gM_PPTP_MAX=3
             fi
         else
         echo "Metrics PPTP_MAX or PPTP_MIN do not exist in metrics.json"     
         fi
 	 else	 
 	 gM_PPTP_MIN=0
-	 gM_PPTP_MAX=10 
+	 gM_PPTP_MAX=3 
 	 fi     
      ;;    
 
@@ -486,19 +475,19 @@ function initializeEvalMetrics(){
             if key_exist CPOP_MIN; then
                 gM_CPOP_MIN=$(jq -r '.CPOP_MIN' metrics.json)
             else
-                gM_CPOP_MIN=0
+                gM_CPOP_MIN=8
             fi
             if key_exist CPOP_MAX; then
                 gM_CPOP_MAX=$(jq -r '.CPOP_MAX' metrics.json)              
             else
-                gM_CPOP_MAX=9999999
+                gM_CPOP_MAX=250
             fi
         else
         echo "Metrics CPOP_MAX or CPOP_MIN do not exist in metrics.json"     
         fi
 	 else	 
-	 gM_CPOP_MIN=0
-	 gM_CPOP_MAX=10 
+	 gM_CPOP_MIN=8
+	 gM_CPOP_MAX=250 
 	 fi     
 	 ;;
 	esac
