@@ -1,4 +1,6 @@
-:![Test](https://github.com/jesusc/satori/workflows/test-satori-action/badge.svg):
+<p align="center">
+  <a href="https://github.com/satori-chatbots/chatbots-actions"><img alt="typescript-action status" src="https://github.com/jesusc/satori/workflows/test-satori-action/badge.svg"></a>
+</p>
 
 # SATORI Actions
 
