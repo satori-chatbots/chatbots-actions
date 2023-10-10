@@ -1,5 +1,7 @@
 
-:  ![Test](https://github.com/jesusc/satori/workflows/test-satori-action/badge.svg) :
+<p align="center">
+  ![Test](https://github.com/jesusc/satori/workflows/test-satori-action/badge.svg)
+</p>
 # SATORI Actions
 
 
