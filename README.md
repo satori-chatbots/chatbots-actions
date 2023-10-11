@@ -33,9 +33,8 @@ The following inputs are required:
 
 ## Possible extra configuration
 
-For point 2 of SATORI actions, "Applies a suite of design metrics" the action allows the user to define the thresholds for these metrics as well as which ones they want to be evaluated in their project.
-
-To do this, you must add a file called `metrics.json` to the root of the repository (if this file does not exist, all metrics will be evaluated, and the thresholds will be defined based on a study conducted on 250 GitHub chatbots). The file must adhere to the following structure:
+In step 2, the action applies a suite of design metrics. The set of metrics to be evaluated, and their thresholds, can be configured.
+To do this, a file called `metrics.json` must be added to the root of the repository (if this file does not exist, all metrics will be evaluated, and the thresholds will be defined based on a [study conducted on 250 GitHub chatbots](https://github.com/asym0b/Dataset). The file must adhere to the following structure:
 
 ```json
 {
@@ -72,7 +71,7 @@ To do this, you must add a file called `metrics.json` to the root of the reposit
 }
 ```
 
-Through this JSON, it will be possible to establish the thresholds, and in the event that the evaluation of a certain metric is not required, the minimum and maximum values defined for that metric must be removed from this JSON. This means that it is only necessary to define a threshold (minimum or maximum) for any metric to have it considered in the evaluation. For example, if you want only the metrics ENT, INT, FLOW, and TPI to be evaluated, the content of the metrics.json file could be as follows:
+Through this JSON, it will be possible to establish the thresholds, and in the event that the evaluation of a certain metric is not required, the minimum and maximum values defined for that metric must be removed from this JSON. This means that it is only necessary to define a threshold (minimum or maximum) for the metrics considered in the evaluation. For example, if only the metrics ENT, INT, FLOW, and TPI are to be evaluated, the content of the metrics.json file could be as follows:
 
 ```json
 {
