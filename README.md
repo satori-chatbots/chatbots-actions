@@ -72,7 +72,7 @@ To do this, you must add a file called `metrics.json` to the root of the reposit
 }
 ```
 
-Through this JSON, it will be possible to establish the thresholds, and in the event that the evaluation of a certain metric is not required, the minimum and maximum values defined for that metric must be removed from this JSON. This means that it is only necessary to define a threshold (minimum or maximum) for any metric to have it considered in the evaluation. For example, if you want only the metrics ENT, INT, FLOW, and TPI to be evaluated, the content of the metrics.json file should be as follows:
+Through this JSON, it will be possible to establish the thresholds, and in the event that the evaluation of a certain metric is not required, the minimum and maximum values defined for that metric must be removed from this JSON. This means that it is only necessary to define a threshold (minimum or maximum) for any metric to have it considered in the evaluation. For example, if you want only the metrics ENT, INT, FLOW, and TPI to be evaluated, the content of the metrics.json file could be as follows:
 
 ```json
 {
