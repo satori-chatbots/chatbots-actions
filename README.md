@@ -6,7 +6,7 @@
 
 
 
-This repository contains the implementation of the GitHub Actions to check chatbots using the SATORI chatbot platform.
+This repository contains the implementation of the GitHub Action for quality assurance of chatbots using the SATORI chatbot platform. In particular, the action (1) extracts the chatbot design, producing a visualisation; (2) applies a suite of design metrics (chatbot size, intent quality, chatbot output phrases, chatbot vocabulary, conversation); and (3) validates the design against well-formedness rules and quality practices (e.g., unused intents, poorly trained intentes, too long replies).
 
 ## Usage
 
