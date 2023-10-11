@@ -13,7 +13,7 @@ This repository contains the implementation of the GitHub Actions to check chatb
 Add the following entry to your Github workflow YAML file with the required inputs:
 
 ```yaml
-uses: satori-chatbots/chatbots-actions
+uses: satori-chatbots/chatbots-actions@1.0
 with:
     format: "Rasa"
     version: 2.0
