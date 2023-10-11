@@ -1,0 +1,16 @@
+name: 'Chatbot quality assurance'
+description: 'Apply several techniques to check the quality of your chatbot'
+inputs:
+  format:
+    description: 'Chatbot technology used'
+    required: true
+  repository:
+    description: 'Repository name with owner'
+    required: true
+    default: ${{ github.repository }}  
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.format }}
+    - ${{ inputs.version }}
