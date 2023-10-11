@@ -35,7 +35,7 @@ The following inputs are required:
 
 For point 2 of SATORI actions, "Applies a suite of design metrics" the action allows the user to define the thresholds for these metrics as well as which ones they want to be evaluated in their project.
 
-To do this, you must add a file called `metrics.json` to the root of the repository (if this file does not exist, all metrics will be evaluated, and the thresholds will be defined based on a study conducted on 250 GitHub chatbots). The file must contain the following content:
+To do this, you must add a file called `metrics.json` to the root of the repository (if this file does not exist, all metrics will be evaluated, and the thresholds will be defined based on a study conducted on 250 GitHub chatbots). The file must adhere to the following structure:
 
 ```json
 {
@@ -72,7 +72,20 @@ To do this, you must add a file called `metrics.json` to the root of the reposit
 }
 ```
 
-Through this JSON, it will be possible to establish the thresholds, and in the event that the evaluation of a certain metric is not required, the minimum and maximum values defined for that metric must be removed from this JSON. For more information about these metrics, please visit: <a href='http://miso.ii.uam.es/asymobService/metrics.html'>asymob</a>.
+Through this JSON, it will be possible to establish the thresholds, and in the event that the evaluation of a certain metric is not required, the minimum and maximum values defined for that metric must be removed from this JSON. This means that it is only necessary to define a threshold (minimum or maximum) for any metric to have it considered in the evaluation. For example, if you want only the metrics ENT, INT, FLOW, and TPI to be evaluated, the content of the metrics.json file should be as follows:
+
+```json
+{
+"ENT_MIN": 1.00,
+"INT_MIN": 3.00,
+"INT_MAX": 29.00,
+"FLOW_MIN": 2.00,
+"FLOW_MAX": 21.00,
+"TPI_MIN": 8.00
+}
+```
+
+For more information about these metrics, please visit: <a href='http://miso.ii.uam.es/asymobService/metrics.html'>asymob</a>.
 
 ## Development
 
