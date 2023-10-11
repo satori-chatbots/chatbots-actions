@@ -34,7 +34,7 @@ The following inputs are required:
 ## Possible extra configuration
 
 In step 2, the action applies a suite of design metrics. The set of metrics to be evaluated, and their thresholds, can be configured.
-To do this, a file called `metrics.json` must be added to the root of the repository (if this file does not exist, all metrics will be evaluated, and the thresholds will be defined based on a [study conducted on 250 GitHub chatbots](https://github.com/asym0b/Dataset). The file must adhere to the following structure:
+To do this, a file called `metrics.json` must be added to the root of the repository (if this file does not exist, all metrics will be evaluated, and the thresholds will be defined based on a [study conducted on 250 GitHub chatbots](https://github.com/asym0b/Dataset)). The file must adhere to the following structure:
 
 ```json
 {
